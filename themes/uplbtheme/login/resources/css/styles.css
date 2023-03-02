@@ -1,0 +1,6 @@
+.login-pf, .login-pf body {background: none;}
+.login-pf-page-header{display: none;}
+#main-nav{height: 50px;background-color: red;}
+#footer{height: 20px;background-color: red;position: absolute;bottom: 0;left:0;width: 100%;}
+.btn-primary{background-color: red!important;background-image: none;border: 0 none;}
+.btn-primary:hover{background-color: red!important;}

@@ -1,0 +1,65 @@
+version: '3'
+
+volumes:
+  postgres_data:
+      driver: local
+services:
+  postgres:
+      image: postgres:14-alpine
+      restart: always
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      environment:
+        POSTGRES_DB: keycloak
+        POSTGRES_USER: keycloak
+        POSTGRES_PASSWORD: password
+      networks:
+        - uplbapp
+  adminer:
+      image: adminer
+      restart: always
+      ports:
+        - 8500:8080
+      networks:
+        - uplbapp
+  keycloak:
+      image: quay.io/keycloak/keycloak:latest
+      # image: quay.io/keycloak/keycloak:legacy
+      # restart: always
+      environment:
+        DB_VENDOR: POSTGRES
+        DB_ADDR: postgres
+        DB_DATABASE: keycloak
+        DB_USER: keycloak
+        DB_SCHEMA: public
+        DB_PASSWORD: password
+        # KEYCLOAK_USER: admin
+        # KEYCLOAK_PASSWORD: Pa55w0rd
+        KEYCLOAK_ADMIN: admin
+        KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
+        PROXY_ADDRESS_FORWARDING: ${PROXY_ADDRESS_FORWARDING:-true}
+        # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
+        #JDBC_PARAMS: "ssl=true"
+      command:
+        - start-dev
+      volumes:
+        # THEMES
+        - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
+        - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
+        - ./themes/uplbtheme.v3:/opt/keycloak/themes/uplbtheme.v3
+        # - ./themes/uplbtheme:/opt/jboss/keycloak/themes/uplbtheme
+        # - ./themes/uplbtheme.v2:/opt/jboss/keycloak/themes/uplbtheme.v2
+        # - ./themes/uplbtheme.v3:/opt/jboss/keycloak/themes/uplbtheme.v3
+        # PROVIDERS
+        # 2FA Email
+        - ./providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
+        - ./providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
+      ports:
+        - 8282:8080
+      depends_on:
+        - postgres
+      networks:
+        - uplbapp
+networks:
+  uplbapp:
+    driver: bridge
