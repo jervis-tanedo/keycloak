@@ -23,7 +23,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-      image: quay.io/keycloak/keycloak:latest
+      image: quay.io/keycloak/keycloak:20.0.5
       # image: quay.io/keycloak/keycloak:legacy
       # restart: always
       environment:
