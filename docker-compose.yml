@@ -24,8 +24,7 @@ services:
         - uplbapp
   keycloak:
       image: quay.io/keycloak/keycloak:20.0.5
-      # image: quay.io/keycloak/keycloak:legacy
-      # restart: always
+      restart: always
       environment:
         DB_VENDOR: POSTGRES
         DB_ADDR: postgres
