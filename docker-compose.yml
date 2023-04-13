@@ -7,6 +7,8 @@ services:
   postgres:
       image: postgres:14-alpine
       restart: always
+      ports:
+        - 5432:5432
       volumes:
         - postgres_data:/var/lib/postgresql/data
       environment:
@@ -36,11 +38,12 @@ services:
         # KEYCLOAK_PASSWORD: Pa55w0rd
         KEYCLOAK_ADMIN: admin
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-        PROXY_ADDRESS_FORWARDING: ${PROXY_ADDRESS_FORWARDING:-true}
+        PROXY_ADDRESS_FORWARDING: true
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
         - start-dev
+        - --db postgres --db-url-host postgres --db-username keycloak --db-password password
       volumes:
         # THEMES
         - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
