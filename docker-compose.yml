@@ -7,8 +7,8 @@ services:
   postgres:
       image: postgres:14-alpine
       restart: always
-      ports:
-        - 5432:5432
+      # ports:
+      #   - 5432:5432
       volumes:
         - postgres_data:/var/lib/postgresql/data
       environment:
@@ -28,12 +28,18 @@ services:
       image: quay.io/keycloak/keycloak:20.0.5
       restart: always
       environment:
-        DB_VENDOR: POSTGRES
-        DB_ADDR: postgres
-        DB_DATABASE: keycloak
-        DB_USER: keycloak
-        DB_SCHEMA: public
-        DB_PASSWORD: password
+        # DB_VENDOR: POSTGRES
+        KC_DB: postgres
+        # DB_ADDR: postgres
+        KC_DB_URL_HOST: postgres
+        # DB_DATABASE: keycloak
+        KC_DB_URL_DATABASE: keycloak
+        # DB_USER: keycloak
+        KC_DB_USERNAME: keycloak
+        # DB_SCHEMA: public
+        KC_DB_SCHEMA: public
+        # DB_PASSWORD: password
+        KC_DB_PASSWORD: password
         # KEYCLOAK_USER: admin
         # KEYCLOAK_PASSWORD: Pa55w0rd
         KEYCLOAK_ADMIN: admin
@@ -43,15 +49,11 @@ services:
         #JDBC_PARAMS: "ssl=true"
       command:
         - start-dev
-        - --db postgres --db-url-host postgres --db-username keycloak --db-password password
       volumes:
         # THEMES
         - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
         - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
         - ./themes/uplbtheme.v3:/opt/keycloak/themes/uplbtheme.v3
-        # - ./themes/uplbtheme:/opt/jboss/keycloak/themes/uplbtheme
-        # - ./themes/uplbtheme.v2:/opt/jboss/keycloak/themes/uplbtheme.v2
-        # - ./themes/uplbtheme.v3:/opt/jboss/keycloak/themes/uplbtheme.v3
         # PROVIDERS
         # 2FA Email
         - ./providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
