@@ -28,20 +28,12 @@ services:
       image: quay.io/keycloak/keycloak:20.0.5
       restart: always
       environment:
-        # DB_VENDOR: POSTGRES
         KC_DB: postgres
-        # DB_ADDR: postgres
         KC_DB_URL_HOST: postgres
-        # DB_DATABASE: keycloak
         KC_DB_URL_DATABASE: keycloak
-        # DB_USER: keycloak
         KC_DB_USERNAME: keycloak
-        # DB_SCHEMA: public
         KC_DB_SCHEMA: public
-        # DB_PASSWORD: password
         KC_DB_PASSWORD: password
-        # KEYCLOAK_USER: admin
-        # KEYCLOAK_PASSWORD: Pa55w0rd
         KEYCLOAK_ADMIN: admin
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
         PROXY_ADDRESS_FORWARDING: true
@@ -49,7 +41,15 @@ services:
         #JDBC_PARAMS: "ssl=true"
       command:
         - start-dev
+        - "-Dkeycloak.migration.action=export"
+        - "-Dkeycloak.migration.provider=singleFile"
+        # - "-Dkeycloak.migration.realmName=keep-growing"
+        - "-Dkeycloak.migration.usersExportStrategy=DIFFERENT_FILES"
+        - "-Dkeycloak.migration.file=/exports/keep-growing-realm.json"
+        # - export /opt/keycloak/bin/kc.sh export --dir /exports --users same_file
       volumes:
+        #exports
+        - ./:/exports
         # THEMES
         - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
         - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
