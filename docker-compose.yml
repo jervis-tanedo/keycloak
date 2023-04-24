@@ -41,12 +41,6 @@ services:
         #JDBC_PARAMS: "ssl=true"
       command:
         - start-dev
-        - "-Dkeycloak.migration.action=export"
-        - "-Dkeycloak.migration.provider=singleFile"
-        # - "-Dkeycloak.migration.realmName=keep-growing"
-        - "-Dkeycloak.migration.usersExportStrategy=DIFFERENT_FILES"
-        - "-Dkeycloak.migration.file=/exports/keep-growing-realm.json"
-        # - export /opt/keycloak/bin/kc.sh export --dir /exports --users same_file
       volumes:
         #exports
         - ./:/exports
