@@ -55,9 +55,7 @@ services:
         - ./ssl/fullchain.pem:/etc/x509/https/tls.crt"
         - ./ssl/privkey.pem:/etc/x509/https/tls.key
         # THEMES
-        - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
-        - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
-        - ./themes/uplbtheme.v3:/opt/keycloak/themes/uplbtheme.v3
+        - ./themes:/opt/keycloak/themes
         # PROVIDERS
         # 2FA Email
         - ./providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
