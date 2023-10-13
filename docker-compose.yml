@@ -25,7 +25,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-      image: quay.io/keycloak/keycloak:latest
+      image: quay.io/keycloak/keycloak:22.0.4
       restart: always
       environment:
         KC_DB: postgres
@@ -40,7 +40,10 @@ services:
         KC_USERS_PER_FILE: 1000
         KEYCLOAK_ADMIN: admin
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-        PROXY_ADDRESS_FORWARDING: true
+        # PROXY_ADDRESS_FORWARDING: true
+        KC_FEATURES: account3,admin-api,account-api
+        KC_METRICS_ENABLED: true
+        KC_HEALTH_ENABLED: true
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
@@ -52,9 +55,7 @@ services:
         - ./ssl/fullchain.pem:/etc/x509/https/tls.crt"
         - ./ssl/privkey.pem:/etc/x509/https/tls.key
         # THEMES
-        - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
-        - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
-        - ./themes/uplbtheme.v3:/opt/keycloak/themes/uplbtheme.v3
+        - ./themes:/opt/keycloak/themes
         # PROVIDERS
         # 2FA Email
         - ./providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
@@ -64,7 +65,7 @@ services:
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT.jar
       ports:
-        - 8282:8080
+        - 8080:8080
         - 443:8443
       depends_on:
         - postgres
