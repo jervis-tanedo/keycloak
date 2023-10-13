@@ -40,10 +40,10 @@ services:
         KC_USERS_PER_FILE: 1000
         KEYCLOAK_ADMIN: admin
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-        # PROXY_ADDRESS_FORWARDING: true
+        PROXY_ADDRESS_FORWARDING: 1
         KC_FEATURES: account3,admin-api,account-api
-        KC_METRICS_ENABLED: true
-        KC_HEALTH_ENABLED: true
+        KC_METRICS_ENABLED: 1
+        KC_HEALTH_ENABLED: 1
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
