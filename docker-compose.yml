@@ -25,7 +25,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-      image: quay.io/keycloak/keycloak:latest
+      image: quay.io/keycloak/keycloak:22.0.4
       restart: always
       environment:
         KC_DB: postgres
@@ -40,7 +40,7 @@ services:
         KC_USERS_PER_FILE: 1000
         KEYCLOAK_ADMIN: admin
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-        PROXY_ADDRESS_FORWARDING: true
+        # PROXY_ADDRESS_FORWARDING: true
         KC_FEATURES: account3,admin-api,account-api
         KC_METRICS_ENABLED: true
         KC_HEALTH_ENABLED: true
@@ -65,7 +65,7 @@ services:
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT.jar
       ports:
-        - 8282:8080
+        - 8080:8080
         - 443:8443
       depends_on:
         - postgres
