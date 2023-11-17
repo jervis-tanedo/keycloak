@@ -153,10 +153,5 @@
     </div>
   </div>
 </body>
-<script type="text/javascript">
-    function timedRedirect() {
-        setTimeout("window.location.href = 'http://localhost:3000';",1500);
-    }
-</script>
 </html>
 </#macro>

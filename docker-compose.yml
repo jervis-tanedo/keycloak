@@ -26,10 +26,14 @@ services:
         - uplbapp
   keycloak:
 <<<<<<< HEAD
+<<<<<<< HEAD
       image: quay.io/keycloak/keycloak:latest
 =======
       image: quay.io/keycloak/keycloak:22.0.4
 >>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
+=======
+      image: quay.io/keycloak/keycloak:latest
+>>>>>>> adaecfecef4f5ec9348a27f4dd6d83287496728d
       restart: always
       environment:
         KC_DB: postgres
