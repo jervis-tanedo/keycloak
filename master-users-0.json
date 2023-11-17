@@ -1,24 +1,30 @@
 {
   "realm" : "master",
   "users" : [ {
-    "id" : "29251de8-2e54-42b6-83d4-0e81940df296",
-    "createdTimestamp" : 1681369405287,
+    "id" : "84d18e48-f4df-492a-8ad9-2835c11cb19b",
+    "createdTimestamp" : 1682314695409,
     "username" : "admin",
     "enabled" : true,
     "totp" : false,
     "emailVerified" : false,
+    "firstName" : "UPLB",
+    "lastName" : "IAMS",
+    "email" : "iams.dx.uplb@up.edu.ph",
+    "attributes" : {
+      "locale" : [ "en" ]
+    },
     "credentials" : [ {
-      "id" : "0203fc72-337c-4436-a373-183f9e020b28",
+      "id" : "6f3a3a0d-6aca-4b3e-a6f2-acce8bca5a91",
       "type" : "password",
-      "createdDate" : 1681369405504,
-      "secretData" : "{\"value\":\"q5C0uMKwlUd0i5Nof43acuQh5xL6rcdTJPswHdsZNn45jnaMZwEz3howwryUtBJeGVoJsPtTSCRDEAqPO3qtjA==\",\"salt\":\"+Y0yau/ZcghQDFzFh3bEdg==\",\"additionalParameters\":{}}",
+      "createdDate" : 1682314695661,
+      "secretData" : "{\"value\":\"CxeHNXgt3lWxghZG659LQUYB3fwsS+/Z4MBy/rQMK24=\",\"salt\":\"u0zpKnnciY6YsO7QB5oU1A==\",\"additionalParameters\":{}}",
       "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
     } ],
     "disableableCredentialTypes" : [ ],
     "requiredActions" : [ ],
     "realmRoles" : [ "admin", "default-roles-master" ],
     "clientRoles" : {
-      "UPLB_APP_REALM-realm" : [ "view-authorization", "query-clients", "query-groups", "view-identity-providers", "view-clients", "view-events", "view-users", "manage-events", "manage-clients", "manage-identity-providers", "manage-realm", "create-client", "manage-users", "query-realms", "view-realm", "manage-authorization", "query-users" ]
+      "UPLB_APP_REALM-realm" : [ "create-client", "view-authorization", "view-users", "manage-users", "query-groups", "view-realm", "manage-events", "view-identity-providers", "view-events", "manage-realm", "query-clients", "manage-clients", "manage-authorization", "manage-identity-providers", "query-realms", "view-clients", "query-users" ]
     },
     "notBefore" : 0,
     "groups" : [ ]

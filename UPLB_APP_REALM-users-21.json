@@ -1,0 +1,991 @@
+{
+  "realm" : "UPLB_APP_REALM",
+  "users" : [ {
+    "id" : "6a2947f7-fcbe-481b-a8a5-bbb16592be69",
+    "username" : "zobautista",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "BAUTISTA",
+    "lastName" : "ZOL BRILLIANCE",
+    "email" : "zobautista@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "7d54ae58-ff91-4e6e-b5ab-8939490845bf",
+    "username" : "zomaiso",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZERINE DAPHNE",
+    "lastName" : "MAISO",
+    "email" : "zomaiso@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "5df2dadf-4069-4438-896d-3fb9c1beeeb4",
+    "username" : "zomanaois",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZERIL JAN",
+    "lastName" : "MANAOIS",
+    "email" : "zomanaois@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "b9f30c1a-033e-49f5-8302-83c94abebcb9",
+    "username" : "zpcastellano",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZYRELLE",
+    "lastName" : "CASTELLANO",
+    "email" : "zpcastellano@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d8053b88-ddd2-4206-b41e-e17bc6d1bdfe",
+    "username" : "zpdeomano",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZILDJIAN",
+    "lastName" : "DEOMANO",
+    "email" : "zpdeomano@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "5d8c4b5a-f8a8-4b82-8282-b8e86e1ed62b",
+    "username" : "zpdepadua",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARED PATRICIA",
+    "lastName" : "DE PADUA",
+    "email" : "zpdepadua@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "8af7f911-8b81-403f-ae17-b41e5d894f4a",
+    "username" : "zpgecalao",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZYRA NICOLE",
+    "lastName" : "GECALAO",
+    "email" : "zpgecalao@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "72075836-0609-46b8-ae27-f7e71a247969",
+    "username" : "zpmarquez",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRA",
+    "lastName" : "MARQUEZ",
+    "email" : "zpmarquez@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "fc8b88d6-c283-4082-a604-b6d29db3ee82",
+    "username" : "zpsuba",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOMAMIGGIE",
+    "lastName" : "SUBA",
+    "email" : "zpsuba@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "45a8cb04-841e-45c1-a090-b7fec5e8aa46",
+    "username" : "zpwai",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZUN PWINT",
+    "lastName" : "WAI",
+    "email" : "zpwai@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "b2c57755-f438-4de4-b5ee-36f3ea95ee0e",
+    "username" : "zqgurion",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZHARINA IZABEL",
+    "lastName" : "GURION",
+    "email" : "zqgurion@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "56c9016f-46ad-41a6-8ac1-60e3b224d84b",
+    "username" : "zrbacud",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOE",
+    "lastName" : "BACUD",
+    "email" : "zrbacud@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "333f4843-62e0-413f-b84f-bf948d647377",
+    "username" : "zrbacud1",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAM",
+    "lastName" : "BACUD",
+    "email" : "zrbacud1@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "08743c07-558a-4af5-bf27-3a263ec4c0e2",
+    "username" : "zrfabellar",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZYRIL JEWEL",
+    "lastName" : "FABELLAR",
+    "email" : "zrfabellar@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "0f50a4b4-1139-4f2b-acbf-324e3df7e849",
+    "username" : "zrgarcia",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRA MAE",
+    "lastName" : "GARCIA",
+    "email" : "zrgarcia@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "a1ac1214-b44f-4280-a5ee-f280fb8e6452",
+    "username" : "zrhijara",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRON JOSHUA",
+    "lastName" : "HIJARA",
+    "email" : "zrhijara@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "5a75478a-8cfa-4d47-ac74-e9125cd68609",
+    "username" : "zrmicor",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZURIEL GENE",
+    "lastName" : "MICOR",
+    "email" : "zrmicor@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "5ec72449-c778-49e4-8c76-89d00e636ae7",
+    "username" : "zrperez",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOILO ROY",
+    "lastName" : "PEREZ",
+    "email" : "zrperez@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "fd4c7c14-8799-4d2f-a5a6-c9aa8894e11e",
+    "username" : "zrperez1",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZANDRO RENAN",
+    "lastName" : "PEREZ",
+    "email" : "zrperez1@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "7b0b90fa-6f63-4cca-9769-2122be83852d",
+    "username" : "zsacebuche",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEDANE ALLEN",
+    "lastName" : "ACEBUCHE",
+    "email" : "zsacebuche@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "f877a675-f5c0-496f-86bc-f5eb3223c6c8",
+    "username" : "zscapio",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZIAH BERNADETTE",
+    "lastName" : "CAPIO",
+    "email" : "zscapio@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "04dec590-db6b-4178-b747-f78d51726a88",
+    "username" : "zscaringal",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEA MAYS",
+    "lastName" : "CARINGAL",
+    "email" : "zscaringal@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "a20a0b7a-0993-4bd3-8b28-f0eaac2152ea",
+    "username" : "zsdagandan",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARAH LOUISE",
+    "lastName" : "DAGANDAN",
+    "email" : "zsdagandan@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "096d9171-efc7-4c9f-a774-2554f5839ae7",
+    "username" : "zsdelacruz",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOZHELYN ANNE",
+    "lastName" : "DELA CRUZ",
+    "email" : "zsdelacruz@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "67d8a2a6-d0bd-47a1-b293-98b2a289d672",
+    "username" : "zselumba",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEUS",
+    "lastName" : "ELUMBA",
+    "email" : "zselumba@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6dfe13eb-1f02-45a1-9835-f8dbbe24eb63",
+    "username" : "zsgaribay",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZSERINA JHOANE",
+    "lastName" : "GARIBAY",
+    "email" : "zsgaribay@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "9f3ab1cb-4316-47cf-bf9a-0b5f3ff323b3",
+    "username" : "zsnadela",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRE GRACE",
+    "lastName" : "NADELA",
+    "email" : "zsnadela@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "092f65bd-c019-479b-85f4-43052232ec50",
+    "username" : "zsoe",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAR",
+    "lastName" : "SOE",
+    "email" : "zsoe@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "72b134cd-83f5-47ca-8bed-a7e79d9c07bd",
+    "username" : "zsreyes",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRON RAYMOND",
+    "lastName" : "REYES",
+    "email" : "zsreyes@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "bd5d8141-2520-41e0-9f37-d10e600af27d",
+    "username" : "zsroxas",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEADRIC JOSEPH",
+    "lastName" : "ROXAS",
+    "email" : "zsroxas@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6d8b915a-5a94-4356-98d4-a15856347256",
+    "username" : "zstamawen",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZION JEMILLINIUM",
+    "lastName" : "TAM-AWEN",
+    "email" : "zstamawen@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c08484d2-ce2f-459d-8b2a-6a55e0df9cf5",
+    "username" : "zswe",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZIN MAR",
+    "lastName" : "SWE",
+    "email" : "zswe@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "78abfdbd-e831-4441-99d7-efaf164446d2",
+    "username" : "ztasnim",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARIN",
+    "lastName" : "TASNIM",
+    "email" : "ztasnim@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c1f094b9-94a4-426f-a453-581ffadb7cd0",
+    "username" : "ztbanzon",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOE ARIANNE",
+    "lastName" : "BANZON",
+    "email" : "ztbanzon@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "57203744-1580-4211-b652-311a9d30c021",
+    "username" : "ztbernardo",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZENAIDA",
+    "lastName" : "BERNARDO",
+    "email" : "ztbernardo@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c6f383c3-0e90-4ce8-b63e-cbf975c257a4",
+    "username" : "ztborja",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZYRELLE JOIE",
+    "lastName" : "BORJA",
+    "email" : "ztborja@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6005fa35-bd04-4512-bd29-7dfb80ed9b14",
+    "username" : "ztdaza",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARAMAE",
+    "lastName" : "DAZA",
+    "email" : "ztdaza@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "686998de-fbbb-453c-b1a9-691e152a8785",
+    "username" : "zthu",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAR",
+    "lastName" : "THU",
+    "email" : "zthu@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d5cc4226-788a-45eb-a4a9-33ee433fc340",
+    "username" : "ztmegino",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARAH CLARICE",
+    "lastName" : "MEGINO",
+    "email" : "ztmegino@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "46c3d005-5c6c-4207-b726-503e3077eeb1",
+    "username" : "ztperalta",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZYRIL JOHN",
+    "lastName" : "PERALTA",
+    "email" : "ztperalta@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d7dc9324-bd24-4a1b-aae8-1d98b1309b12",
+    "username" : "ztsarapuddin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARINA",
+    "lastName" : "SARAPUDDIN",
+    "email" : "ztsarapuddin@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "890b55c1-ef16-44b8-9a33-fb6ce345c463",
+    "username" : "zttaclob",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEARINA YSABEL",
+    "lastName" : "TACLOB",
+    "email" : "zttaclob@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c5ea4db7-1d43-46d0-bcdc-20dca5cf7b9c",
+    "username" : "ztvillanueva",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOE KIRSTEN",
+    "lastName" : "VILLANUEVA",
+    "email" : "ztvillanueva@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "df80f0dd-945d-4122-a720-3bd8e09e4e50",
+    "username" : "ztyambao",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZENYOR ZYROY",
+    "lastName" : "YAMBAO",
+    "email" : "ztyambao@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d663f5c7-db10-4b37-8c03-6e5e68b9631d",
+    "username" : "zuamazona",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAHRA MAY",
+    "lastName" : "AMAZONA",
+    "email" : "zuamazona@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "33c23901-56e1-4008-a7b4-756bdc48c21b",
+    "username" : "zuantonio",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIRA ANGELA",
+    "lastName" : "ANTONIO",
+    "email" : "zuantonio@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "2b9aef78-7463-4718-8e3f-e37e7867ae76",
+    "username" : "zuvirtusio",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZEUS DAVE",
+    "lastName" : "VIRTUSIO",
+    "email" : "zuvirtusio@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "26e5cac0-b176-46cd-a95a-809e193c70db",
+    "username" : "zvalbacea",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZITA",
+    "lastName" : "ALBACEA",
+    "email" : "zvalbacea@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "mas_faculty_accept", "faculty", "pcw_faculty_approve", "mas_faculty_endorse" ],
+      "uplb-ors" : [ "so-faculty" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "88ef9e9c-0dcf-4ea0-aa3f-3febbed72c18",
+    "username" : "zvamper",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZORAIDA",
+    "lastName" : "AMPER",
+    "email" : "zvamper@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "dd241cd2-b7c5-4b74-9656-7df71900c0c5",
+    "username" : "zvbarola",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZCYREL",
+    "lastName" : "BAROLA",
+    "email" : "zvbarola@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "8c770d99-99ce-4497-b019-2331d2228363",
+    "username" : "zvcipriano",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZENITH AVERI",
+    "lastName" : "CIPRIANO",
+    "email" : "zvcipriano@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "73238d42-c648-43c4-adc2-8be7e35d2d26",
+    "username" : "zvhernandez",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZAIDE",
+    "lastName" : "HERNANDEZ",
+    "email" : "zvhernandez@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "4aa8adc0-f256-4750-bd20-13acb100d087",
+    "username" : "zvkanneh",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZIENU",
+    "lastName" : "KANNEH",
+    "email" : "zvkanneh@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "2f4b9cfc-8bd0-4908-b5f3-a450453b0711",
+    "username" : "zvlaudit",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZARR HEINRICH",
+    "lastName" : "LAUDIT",
+    "email" : "zvlaudit@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c5e7e4cd-ab1d-4a8a-9fd9-8a6e3a537b70",
+    "username" : "zvparra",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZOIA ERYCKA",
+    "lastName" : "PARRA",
+    "email" : "zvparra@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "7e2ddfdc-0aef-432d-b78c-79aa19573169",
+    "username" : "zvsegovia",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZANDRO",
+    "lastName" : "SEGOVIA",
+    "email" : "zvsegovia@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "2dc6196e-f7ca-4f50-b15a-19cf9e652fa8",
+    "username" : "zwzafaralla",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZANDER WALLACE",
+    "lastName" : "ZAFARALLA",
+    "email" : "zwzafaralla@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "53074e57-9eab-45a0-9dbf-5c3dfa3b1645",
+    "username" : "zwzafaralla1",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "firstName" : "ZACHRIJ WADE",
+    "lastName" : "ZAFARALLA",
+    "email" : "zwzafaralla1@up.edu.ph",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "uplb-amis" : [ "student" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

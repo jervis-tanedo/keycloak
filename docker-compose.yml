@@ -25,7 +25,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-      image: quay.io/keycloak/keycloak:20.0.5
+      image: quay.io/keycloak/keycloak:latest
       restart: always
       environment:
         KC_DB: postgres
@@ -35,8 +35,15 @@ services:
         KC_DB_SCHEMA: public
         KC_DB_PASSWORD: password
         KEYCLOAK_ADMIN: admin
+        KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/certs/fullchain.pem
+        KC_HTTPS_CERTIFICATE_KEY_FILE: /opt/keycloak/certs/privkey.pem
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-        PROXY_ADDRESS_FORWARDING: "true"
+        # KC_HOSTNAME: https://localhost/auth
+        # KEYCLOAK_FRONTEND_URL: https://keycloak.uplb.edu.ph/
+        KC_PROXY: edge
+        # KC_HOSTNAME_ADMIN_URL: https://keycloak.uplb.edu.ph/
+        PROXY_ADDRESS_FORWARDING: 1
+        # KC_TRANSACTION_XA_ENABLED: 0
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
@@ -45,8 +52,7 @@ services:
         #exports
         - ./:/exports
         #certs
-        - ./ssl/fullchain.pem:/etc/x509/https/tls.crt"
-        - ./ssl/privkey.pem:/etc/x509/https/tls.key
+        - ./ssl:/opt/keycloak/certs
         # THEMES
         - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
         - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
@@ -57,7 +63,7 @@ services:
         - ./providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
       ports:
         - 8282:8080
-        - 443:8443
+        - 8433:8443
       depends_on:
         - postgres
       networks:
