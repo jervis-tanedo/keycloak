@@ -95,6 +95,9 @@
                                 <#if p.displayName == "Google">
                                     <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
                                     <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">Login using UP Mail</span>
+                                <#else>
+                                    <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
+                                    <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">${p.displayName!}</span>
                                 </#if>
                             <#else>
                                 <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
