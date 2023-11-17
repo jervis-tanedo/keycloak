@@ -25,7 +25,11 @@ services:
       networks:
         - uplbapp
   keycloak:
+<<<<<<< HEAD
       image: quay.io/keycloak/keycloak:latest
+=======
+      image: quay.io/keycloak/keycloak:22.0.4
+>>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
       restart: always
       environment:
         KC_DB: postgres
@@ -34,16 +38,27 @@ services:
         KC_DB_USERNAME: keycloak
         KC_DB_SCHEMA: public
         KC_DB_PASSWORD: password
+        KC_DIR: ./
+        KC_REALM: UPLB_APP_REALM
+        KC_USERS: different_file
+        KC_USERS_PER_FILE: 1000
         KEYCLOAK_ADMIN: admin
         KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/certs/fullchain.pem
         KC_HTTPS_CERTIFICATE_KEY_FILE: /opt/keycloak/certs/privkey.pem
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
+<<<<<<< HEAD
         # KC_HOSTNAME: https://localhost/auth
         # KEYCLOAK_FRONTEND_URL: https://keycloak.uplb.edu.ph/
         KC_PROXY: edge
         # KC_HOSTNAME_ADMIN_URL: https://keycloak.uplb.edu.ph/
         PROXY_ADDRESS_FORWARDING: 1
         # KC_TRANSACTION_XA_ENABLED: 0
+=======
+        PROXY_ADDRESS_FORWARDING: 1
+        KC_FEATURES: account3,admin-api,account-api
+        KC_METRICS_ENABLED: 1
+        KC_HEALTH_ENABLED: 1
+>>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
@@ -54,16 +69,23 @@ services:
         #certs
         - ./ssl:/opt/keycloak/certs
         # THEMES
-        - ./themes/uplbtheme:/opt/keycloak/themes/uplbtheme
-        - ./themes/uplbtheme.v2:/opt/keycloak/themes/uplbtheme.v2
-        - ./themes/uplbtheme.v3:/opt/keycloak/themes/uplbtheme.v3
+        - ./themes:/opt/keycloak/themes
         # PROVIDERS
         # 2FA Email
         - ./providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
         - ./providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar:/opt/keycloak/providers/original-niroj-keycloak-2fa-email-authenticator-1.0-SNAPSHOT.jar
+        #Alternate login
+        - ./providers/attribute-login-provider-0.0.0-SNAPSHOT-javadoc.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT-javadoc.jar
+        - ./providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar
+        - ./providers/attribute-login-provider-0.0.0-SNAPSHOT.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT.jar
       ports:
+<<<<<<< HEAD
         - 8282:8080
         - 8433:8443
+=======
+        - 8080:8080
+        - 443:8443
+>>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
       depends_on:
         - postgres
       networks:
