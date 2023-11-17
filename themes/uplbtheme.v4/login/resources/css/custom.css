@@ -1,0 +1,21 @@
+.custom-card-pf {
+    margin: 0 auto;
+    box-shadow: var(--pf-global--BoxShadow--lg);
+    padding: 0 20px;
+    max-width: 500px;
+    border-top: 4px solid;
+    border-color: #8D1436; /* default - IE compatibility */
+    /* border-color: #0066CC; */
+    border-color: var(--pf-global--primary-color--100);
+}
+ .logo-uplb {
+    background-image: url(../img/uplb-logo.png);
+    background-repeat: no-repeat;
+    height: 63px;
+    width: 63px;
+    margin: 0 auto;
+ }
+
+ input[type=checkbox] {
+    background-color: #8D1436;
+ }
