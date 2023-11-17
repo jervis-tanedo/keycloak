@@ -1,0 +1,26 @@
+{
+  "realm" : "master",
+  "users" : [ {
+    "id" : "29251de8-2e54-42b6-83d4-0e81940df296",
+    "createdTimestamp" : 1681369405287,
+    "username" : "admin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "credentials" : [ {
+      "id" : "0203fc72-337c-4436-a373-183f9e020b28",
+      "type" : "password",
+      "createdDate" : 1681369405504,
+      "secretData" : "{\"value\":\"q5C0uMKwlUd0i5Nof43acuQh5xL6rcdTJPswHdsZNn45jnaMZwEz3howwryUtBJeGVoJsPtTSCRDEAqPO3qtjA==\",\"salt\":\"+Y0yau/ZcghQDFzFh3bEdg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "admin", "default-roles-master" ],
+    "clientRoles" : {
+      "UPLB_APP_REALM-realm" : [ "view-authorization", "query-clients", "query-groups", "view-identity-providers", "view-clients", "view-events", "view-users", "manage-events", "manage-clients", "manage-identity-providers", "manage-realm", "create-client", "manage-users", "query-realms", "view-realm", "manage-authorization", "query-users" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
