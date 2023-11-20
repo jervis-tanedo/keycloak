@@ -16,6 +16,7 @@
 
                     <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
                         <input tabindex="4"
+                               style="background-color: #8D1436;"
                                class="w-full inline-flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium bg-red-700 hover:bg-red-600 text-white"
                                name="confirmLogout" id="kc-logout" type="submit" onclick="timedRedirect()" value="${msg("doLogout")}"/>
                     </div>
