@@ -63,7 +63,7 @@
 
                   <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
-                      <input tabindex="4" class="w-full inline-flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium bg-red-700 hover:bg-red-600 text-white" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
+                      <input tabindex="4" style="background-color: #8D1436;" class="w-full inline-flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium bg-red-700 hover:bg-red-600 text-white" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                   </div>
             </form>
         </#if>
@@ -89,7 +89,7 @@
 
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
                     <#list social.providers as p>
-                        <a id="social-${p.alias}" style="&:hover {border-bottom-color: #cc0000}" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
+                        <a id="social-${p.alias}" style="background-color: #8D1436;" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
                                 type="button" href="${p.loginUrl}">
                             <#if p.iconClasses?has_content>
                                 <#if p.displayName == "Google">

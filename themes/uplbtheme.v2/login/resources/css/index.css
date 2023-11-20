@@ -3,3 +3,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.uplbmaroon {
+    background-color: #8D1436;
+}
+
+.uplbgreen {
+    background-color: #00563F;
+}
+
+.uplbyellow {
+    background-color: #FFB61C;
+}
