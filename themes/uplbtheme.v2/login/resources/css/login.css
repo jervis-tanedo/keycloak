@@ -771,4 +771,16 @@ ul#kc-totp-supported-apps {
     align-items: baseline;
     margin-bottom: 16px;
 }
+
+.uplbmaroon {
+    background-color: #8D1436;
+}
+
+.uplbgreen {
+    background-color: #00563F;
+}
+
+.uplbyellow {
+    background-color: #FFB61C;
+}
 /* End Recovery codes */
