@@ -43,7 +43,12 @@
     <div id="kc-header" class="${properties.kcHeaderClass!}">
     <#--  <img src="${url.resourcesPath}/img/uplb-logo.png"/>  -->
         <div id="kc-header-wrapper"
-             class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+             class="${properties.kcHeaderWrapperClass!}">
+             ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
+        </div>
+        <div class="flex justify-center">
+            <img class="object-scale-down h-24 w-24 mx-auto" src="${url.resourcesPath}/img/uplb-logo.png"/>
+        </div>
     </div>
     <div class="${properties.kcFormCardClass!}" style="margin: 0 auto; box-shadow: var(--pf-global--BoxShadow--lg);  padding: 0 20px; max-width: 500px; border-top: 4px solid; border-color: #8D1436;">
         <header class="${properties.kcFormHeaderClass!}" >
