@@ -27,6 +27,7 @@ services:
   keycloak:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       image: quay.io/keycloak/keycloak:latest
 =======
       image: quay.io/keycloak/keycloak:22.0.4
@@ -34,6 +35,9 @@ services:
 =======
       image: quay.io/keycloak/keycloak:latest
 >>>>>>> adaecfecef4f5ec9348a27f4dd6d83287496728d
+=======
+      image: quay.io/keycloak/keycloak:26.0.5 #prev version 22.0.4
+>>>>>>> 81888eb965393392d58df060e7447ce22443bc31
       restart: always
       environment:
         KC_DB: postgres
