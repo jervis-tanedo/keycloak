@@ -25,19 +25,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      image: quay.io/keycloak/keycloak:latest
-=======
-      image: quay.io/keycloak/keycloak:22.0.4
->>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
-=======
-      image: quay.io/keycloak/keycloak:latest
->>>>>>> adaecfecef4f5ec9348a27f4dd6d83287496728d
-=======
       image: quay.io/keycloak/keycloak:26.0.5 #prev version 22.0.4
->>>>>>> 81888eb965393392d58df060e7447ce22443bc31
       restart: always
       environment:
         KC_DB: postgres
@@ -54,19 +42,12 @@ services:
         KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/certs/fullchain.pem
         KC_HTTPS_CERTIFICATE_KEY_FILE: /opt/keycloak/certs/privkey.pem
         KEYCLOAK_ADMIN_PASSWORD: Pa55w0rd
-<<<<<<< HEAD
         # KC_HOSTNAME: https://localhost/auth
         # KEYCLOAK_FRONTEND_URL: https://keycloak.uplb.edu.ph/
         KC_PROXY: edge
         # KC_HOSTNAME_ADMIN_URL: https://keycloak.uplb.edu.ph/
         PROXY_ADDRESS_FORWARDING: 1
         # KC_TRANSACTION_XA_ENABLED: 0
-=======
-        PROXY_ADDRESS_FORWARDING: 1
-        KC_FEATURES: account3,admin-api,account-api
-        KC_METRICS_ENABLED: 1
-        KC_HEALTH_ENABLED: 1
->>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
         # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
         #JDBC_PARAMS: "ssl=true"
       command:
@@ -87,13 +68,8 @@ services:
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT-sources.jar
         - ./providers/attribute-login-provider-0.0.0-SNAPSHOT.jar:/opt/keycloak/providers/attribute-login-provider-0.0.0-SNAPSHOT.jar
       ports:
-<<<<<<< HEAD
         - 8282:8080
         - 8433:8443
-=======
-        - 8080:8080
-        - 443:8443
->>>>>>> a9d4239bff6d8797dd0dd0c749f76cf2d095c857
       depends_on:
         - postgres
       networks:
