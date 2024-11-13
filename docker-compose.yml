@@ -25,7 +25,7 @@ services:
       networks:
         - uplbapp
   keycloak:
-      image: quay.io/keycloak/keycloak:22.0.4
+      image: quay.io/keycloak/keycloak:26.0.5 #prev version 22.0.4
       restart: always
       environment:
         KC_DB: postgres
